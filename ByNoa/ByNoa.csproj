@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A0598C36-6D78-4796-891B-F47AF919B9E2}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ByNoa</RootNamespace>
+    <AssemblyName>ByNoa</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddEditAppointmentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddEditAppointmentForm.Designer.cs">
+      <DependentUpon>AddEditAppointmentForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Appointment.cs" />
+    <Compile Include="AppointmentsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AppointmentsForm.Designer.cs">
+      <DependentUpon>AppointmentsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AppointmentStatus.cs" />
+    <Compile Include="ByNoaBranch.cs" />
+    <Compile Include="ClientHistoryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClientHistoryForm.Designer.cs">
+      <DependentUpon>ClientHistoryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Customer.cs" />
+    <Compile Include="CustomerCard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerCard.Designer.cs">
+      <DependentUpon>CustomerCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Customers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customers.Designer.cs">
+      <DependentUpon>Customers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerStatusType.cs" />
+    <Compile Include="FilePDF.cs" />
+    <Compile Include="FileType.cs" />
+    <Compile Include="FinancialTransaction.cs" />
+    <Compile Include="LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainDashboard.Designer.cs">
+      <DependentUpon>MainDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PaymentType.cs" />
+    <Compile Include="Product.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="SAD_33DataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SAD_33DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SQL_CON.cs" />
+    <Compile Include="StaffScheduleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StaffScheduleForm.Designer.cs">
+      <DependentUpon>StaffScheduleForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Supplier.cs" />
+    <Compile Include="SupplierType.cs" />
+    <Compile Include="Treatment.cs" />
+    <Compile Include="WorkerStatusType.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TransactionType.cs" />
+    <Compile Include="Worker.cs" />
+    <Compile Include="WorkerType.cs" />
+    <EmbeddedResource Include="AddEditAppointmentForm.resx">
+      <DependentUpon>AddEditAppointmentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AppointmentsForm.resx">
+      <DependentUpon>AppointmentsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClientHistoryForm.resx">
+      <DependentUpon>ClientHistoryForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerCard.resx">
+      <DependentUpon>CustomerCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customers.resx">
+      <DependentUpon>Customers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainDashboard.resx">
+      <DependentUpon>MainDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StaffScheduleForm.resx">
+      <DependentUpon>StaffScheduleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="SAD_33DataSet.xsc">
+      <DependentUpon>SAD_33DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="SAD_33DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SAD_33DataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SAD_33DataSet.xss">
+      <DependentUpon>SAD_33DataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\רקע ורוד מתחלף.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\רקע ורוד מתחלף1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\רקע ורוד מתחלף2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\רקע חדש.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\לוגו.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\אייקון לקק.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\אייקון לקקק.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SAVEICON.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DELETE ICON.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DELETE ICON1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ICON BACK.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Customers Icon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\רקע ורוד מתחלף3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PlusIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\REFRESHICON.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SEARCHICON.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PDF_file_icon.svg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bootstrap-Bootstrap-Bootstrap-filetype-pdf.24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PDFICON.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PDFPURPLESMALL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PDFPURPLE.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TESTTTT.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pdf_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MENU1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menuBlack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\JournalMenu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\heartMenu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CalenderMenu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image %2827%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image %2828%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\לוגו1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image %2829%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image %2828%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logout1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\heart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\journal_13085401.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendar-lines_7602621.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\comment-user_10484831.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image %2829%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image %2830%29.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
